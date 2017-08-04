@@ -1,0 +1,32 @@
+@import '../../utilities/vars'
+@import '../../utilities/mixins'
+
+/* SELECTS */
+select
+  border: solid 3px $gray-text3
+  transitions()
+  line-height: 1.5;
+  padding 14px 32px 16px
+  max-width 360px
+  width 100%
+  margin-bottom 30px
+  font-weight 300
+  -webkit-appearance none
+  -moz-appearance none
+  border-radius 0
+  background $white
+  +placeholder()
+    color $gray-text3
+  &:focus
+    outline none
+    border-color $yellow
+
+.select-container
+  position relative
+  &:after
+    triangle($black, down, 5px)
+    top 28%
+    right 30px
+
+option {}
+optgroup {}

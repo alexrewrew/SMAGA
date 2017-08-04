@@ -1,0 +1,122 @@
+.news-container
+  position relative
+  display block
+  margin-bottom 77px
+  +mobile()
+    margin-bottom 100px
+  &:hover
+    .link-next
+      opacity 1
+    img
+      opacity .75
+  .link-next
+    position absolute
+    right 97px
+    bottom 3px
+    max-width 166px
+    width 100%
+    left auto
+    min-height 20px
+    line-height: 1.44;
+    letter-spacing: 1px;
+    font-size 1em
+    opacity 0
+    transitions()
+    +portrait()
+      right 0
+    +mobile()
+      position relative
+      right auto
+      left auto
+      bottom auto
+      opacity 1
+      max-width 210px
+    &:before
+      bottom -3px
+      height 14px
+  &--image-container
+    width 100%
+    height 250px
+    overflow hidden
+    display flex
+    justify-content center
+    align-items center
+    margin-bottom 53px
+    img
+      min-height 250px
+      transitions()
+  p
+    margin-right 6.250em
+    +portrait()
+      margin-right 0
+    +mobile()
+      margin-right 0
+  &--list
+    display flex
+    flex-direction row
+    flex-wrap nowrap
+    font-weight: 500;
+    line-height: 1.71;
+    color $gray-text4
+    font-size .875em
+    padding 2px 0
+    letter-spacing 1.5px
+    li
+      margin-right 20px
+      .fa
+        margin-right 12px
+
+.news-menu
+  background $gray-back
+  padding 44px 15px 44px 80px
+  +tablet()
+    padding-left 25px
+  +portrait()
+    padding-left 25px
+  +mobile()
+    padding 20px
+  &--list
+    display flex
+    flex-direction row
+    flex-wrap nowrap
+    +mobile()
+      flex-direction column
+    li
+      a
+        color $black
+        position relative
+        font-size 1.125em
+        line-height: 1.89;
+        font-weight 300
+        margin 0 20px
+        &:before
+          pseudo(block, absolute)
+          left -25px
+          top 10px
+          background $yellow
+          width 2px
+          height 8px
+          transform rotate(45deg)
+          opacity 0
+          transitions()
+        &:after
+          pseudo(block, absolute)
+          left -25px
+          top 5px
+          background $yellow
+          width 2px
+          height 8px
+          transform rotate(-45deg)
+          opacity 0
+          transitions()
+        &:hover
+          color $black
+          &:before, &:after
+            opacity 1
+            left -15px
+      .active
+          font-weight 700
+          &:before, &:after
+            opacity 1
+            left -15px
+

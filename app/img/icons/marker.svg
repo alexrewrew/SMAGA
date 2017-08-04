@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="82px" height="108px" viewBox="0 0 82 108" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>Triangle 2 Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-37.8%" y="-23.6%" width="175.5%" height="147.2%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="6.29480699" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Large-Device-Desktops-Copy-10" transform="translate(-604.000000, -552.000000)">
+            <g id="Triangle-2-Copy" transform="translate(618.000000, 565.000000)">
+                <path d="M27.0027379,83 L4.80546475,39.0954501 L4.80546475,39.0954501 C-1.39255241,26.8362346 3.52101963,11.8736913 15.7802351,5.6756741 C19.2596612,3.91654497 23.1038994,3 27.0027379,3 L27.0027379,3 L27.0027379,3 C40.7396874,3 51.8756852,14.1359978 51.8756852,27.8729473 C51.8756852,31.7717857 50.9591402,35.6160239 49.2000111,39.0954501 L27.0027379,83 Z" fill="#A6A6A6" filter="url(#filter-1)"></path>
+                <path d="M25.0027379,80 L2.80546475,36.0954501 L2.80546475,36.0954501 C-3.39255241,23.8362346 1.52101963,8.87369127 13.7802351,2.6756741 C17.2596612,0.916544974 21.1038994,7.16205012e-16 25.0027379,0 L25.0027379,0 L25.0027379,0 C38.7396874,-2.52343668e-15 49.8756852,11.1359978 49.8756852,24.8729473 C49.8756852,28.7717857 48.9591402,32.6160239 47.2000111,36.0954501 L25.0027379,80 Z" id="Triangle-2" fill="#343434"></path>
+                <circle id="Oval" fill="#FFE51B" cx="25" cy="25" r="11"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

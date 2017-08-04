@@ -1,0 +1,26 @@
+#modal-order(style='display:none')
+    .container.modal
+        .row.justify-content-center
+            .col-md-9
+                h2.question-title Запис на прийом
+                p Заповніть поля відповідними данними, ми відповімо якнайшвидше
+                form.order
+                    input(type='text' placeholder='Ваше ім’я')
+                    input(type='tel' placeholder='Телефон')
+                    .select-container
+                        select
+                            option Оберіть послугу
+                            option Оберіть послугу
+                            option Оберіть послугу
+                    input(type='date' placeholder='Введіть бажану дату прийому')
+                    textarea(placeholder='Додаткова інформація')
+                a(href='' title='').button Записатись
+        .row.justify-content-center(style="display:none")
+            .col-md-8.col-lg-6
+                h2.question-title Запис на прийом
+                p Ми відповімо якнайшвидше
+                .modal-image-container
+                    img(src='img/icons/message.svg' title='' alt='' onerror="src='img/icons/message.png'")
+                    p Дякуємо, заявка відправлена
+                        span Наш адміністратор зв’яжеться з вами найближчим часом
+                a(href='' title='').button Добре

@@ -1,0 +1,93 @@
+@import '../../utilities/vars'
+@import '../../utilities/mixins'
+
+/* SECTIONS AND ARTICLES */
+section
+  padding 100px 0
+  +mobile()
+    padding 50px 0
+
+article
+  padding 55px 0 0
+  counter-reset olcount
+  img
+    margin-bottom 30px
+    width 100%
+  ul
+    display flex
+    flex-direction row
+    flex-wrap wrap
+    margin-bottom 55px
+    li
+      flex 1 1 50%
+      max-width 50%
+      font-weight 300
+      line-height: 1.5;
+      position relative
+      padding-left 17px
+      &:before
+        width 7px
+        height 2px
+        background $yellow
+        pseudo(block, absolute)
+        top 10px
+        left 0
+  ol
+    list-style none
+    margin-bottom 55px
+    li
+      font-weight 300
+      line-height: 1.5;
+      position relative
+      padding-left 17px
+      &:before
+        pseudo(block, absolute)
+        left 0
+        top 0
+        counter-increment: olcount;
+        content: counter(olcount) '. ';
+        font-weight 600
+        color $yellow
+
+  +mobile()
+    padding 50px 0
+
+.border-bottom
+  border-bottom 2px solid $gray-text3
+  padding-bottom 30px
+
+aside {}
+
+main
+  background $white
+  transitions()
+  +mobile()
+    position relative
+    z-index 100
+
+.container
+  +displays()
+    width 1170px
+
+.display-flex
+  display flex
+.no-padding-left
+  padding-left 0
+
+.no-padding-left-right
+  padding-left 0
+  padding-right 0
+.hidden-md
+  +portrait()
+    display none
+
+.margin-bottom-0
+  margin-bottom 0
+
+.padding-top-0
+  padding-top 0
+
+.spacer-30
+  height 30px
+.spacer-60
+  height 60px

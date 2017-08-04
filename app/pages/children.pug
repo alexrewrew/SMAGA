@@ -1,0 +1,55 @@
+//- layouts/layout.pug
+extend layouts/_layout-children.pug
+
+block title
+    | Smaga Dental Clinic - Про нас
+
+block content
+
+    header.header-about
+        img(src='img/illus/img11-1.png' title='' alt='').img-about
+        .container
+            .row
+                .col-md-5.col-lg-4.display-flex.align-items-center.flex-last.flex-md-first
+                    .header-title
+                        h1 Дитячий кабінет
+                        p Стоматологічні послуги для дітей різної вікової категорії - один з головних напрямків, чим займається наша клініка. Саме від першого знайомства залежить те, як буде дитина в подальшому реагувати на стоматологічні процедури.
+                        a(href='' title='').button Записатись
+
+    section
+        .container
+            img(src='img/kids/pattern1g.svg' title='' alt='' onerror='this.src="img/kids/pattern1g.png"').pattern
+            .row
+                .col-md-7.col-lg-6
+                    .slider.slider-one
+                        img(src='img/illus/img11-2.png' title='' alt='')
+                        img(src='img/illus/img11-2.png' title='' alt='')
+                        img(src='img/illus/img11-2.png' title='' alt='')
+                .offset-lg-1.col-md-5.display-flex.align-items-center
+                    .block-title
+                        h2 Особливості
+                        p Дитячі лікарі «SMAGA dental clinic» допоможуть підготувати малюка до першого візиту, зацікавлять і відвернуть його під час процедури, а також розкажуть батькам, як привчити дитину систематично відвідувати стоматолога.
+                        p Кожен з лікарів намагається знайти персональний підхід до кожної дитини будь-якого віку, приділити йому особливу увагу, стати для нього другом і розвіяти міф про «Страшного лікаря убілому халаті».
+
+    section
+        .container
+            .row
+                .col-md-5.display-flex.align-items-center
+                    .block-title
+                        h2 Оформлення
+                        p Ми створили справжній казковий світ у дитячому кабінеті. В ньому живуть веселі звірята, різнокольорові пташки та добра зубна фея. Ми прагнемо, щоб дітки, які відвідали нашу клініку, згадували цей візит, як неймовірну подію. Малюки люблять приходити в нашу клініку.
+                        a(href='' title='').button Записатись
+                .offset-md-1.col-md-5
+                    img(src='img/kids/feia.png' alt='' title='' onerror='this.src="img/kids/feia.png"').img-responsive
+
+    section
+        .back-image-1
+            .container
+                .row
+                    .offset-md-6.col-md-6.offset-lg-7.col-lg-5.display-flex.align-items-center
+                        .header-title
+                            h2 Враження
+                            p Ми створили максимально комфортні умови для лікування наших найменших пацієнтів. Ні один з діток не залишиться без подарунка за сміливість і відвагу. Чудові іграшкові звірята стануть справжніми друзями для Вашого малюка.
+                            p Тому наші крихти-пацієнти йдуть без сліз і повертаються без краплі страху! Вашій дитині у нас сподобається!
+
+    include partials/_questions-children

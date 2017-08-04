@@ -1,0 +1,68 @@
+.team-container
+  display block
+  margin-bottom 90px
+  &--image-container
+    img
+      width 100%
+      filter grayscale(100%)
+      opacity .6
+      transitions()
+      +portrait()
+        filter none
+        opacity 1
+      +mobile()
+        filter none
+        opacity 1
+  &--description
+    position relative
+    padding-top 22px
+    padding-bottom 21px
+    background $white
+    &-panel
+      position absolute
+      background $white
+      top 0
+      left 0
+      right 0
+      transitions()
+      padding 30px 0 0
+      p
+        margin-bottom 0
+      +portrait()
+        top -70%
+      +mobile()
+        top -60%
+    .link-next
+      max-width 166px
+      position absolute
+      right 0
+      bottom 0
+      font-size 1em
+      opacity 0
+      +portrait()
+        opacity 1
+      +mobile()
+        opacity 1
+      &:before
+        height 14px
+        bottom -5px
+    h5
+      position relative
+      z-index 20
+      background white
+      +portrait()
+        font-size 1.25em
+  &:hover
+    .team-container--image-container
+      img
+        filter none
+        opacity 1
+    .team-container--description-panel
+      transform translateY(100%)
+      +portrait()
+        transform none
+      +mobile()
+        transform none
+    .team-container--description
+      .link-next
+        opacity 1

@@ -1,0 +1,242 @@
+@import '../../utilities/vars'
+@import '../../utilities/mixins'
+
+/* NAVIGATION */
+nav
+  background $white
+  transitions()
+  padding 52px 0 53px
+  position fixed
+  top 0
+  left 0
+  right 0
+  z-index 400
+  +portrait()
+    padding: 32px 0 33px;
+    .container
+      width 100%
+  +mobile()
+    padding 10px 0 11px
+
+nav.scroll
+  padding 10px 0 11px
+
+.logo
+  display: block
+  +tablet()
+    img
+      width 100%
+  +portrait()
+    img
+      width 100%
+  +mobile()
+    img
+      width 100%
+
+.nav-panel
+  +mobile()
+    background $white
+    height 100vh
+    display none
+    overflow-y scroll
+
+.nav-mobile
+  display none
+  +mobile()
+    display block
+
+nav.fixed
+  position fixed
+  top 0
+  left 0
+  right 0
+  z-index 100
+
+.menu
+  display flex
+  justify-content flex-end
+  flex-direction row
+  flex-wrap nowrap
+  padding 10px 0
+  align-items center
+  +tablet()
+    padding 6px 0
+  +mobile()
+    flex-direction column
+    padding 30px 0
+  li
+    margin 0 14px
+    +tablet()
+      margin 0 9px
+    +portrait()
+      margin: 0 4px;
+    +mobile()
+      margin 0
+    &:last-child
+      margin-right 0
+    a
+      display block
+      letter-spacing: 1px;
+      color $gray-text
+      font-size .875em
+      position relative
+      padding 0 3px
+      z-index 2
+      +tablet()
+        font-size .75em
+      +portrait()
+        font-size .75em
+        padding 0
+      +mobile()
+        font-size 1.5em
+      &:before
+        pseudo(block, absolute)
+        width 100%
+        height 10px
+        background $trans
+        bottom -1px
+        right 0
+        left 0
+        z-index -1
+        transitions()
+      &:hover
+        color $black
+        &:before
+          background $yellow
+
+  .menu-number
+    position relative
+    .menu-number-link
+      font-size 1em
+      color $black
+      font-weight 700
+      padding-right 19px
+      letter-spacing: 1.9px
+      +tablet()
+        font-size .875em
+        padding-right: 13px;
+      +portrait()
+        font-size .875em
+        padding-right: 13px;
+      +mobile()
+        font-size 1.5em
+      &:after
+        pseudo(block, absolute)
+        right 2px
+        triangle($black, down, 4px)
+        top 8px
+        transitions()
+        +mobile()
+          top 12px
+    .menu-number-link.open
+      &:after
+        transform rotate(-180deg)
+    .menu-number-dropdown
+      position absolute
+      top 23px
+      right -15px
+      left -15px
+      width calc(100% + 30px)
+      background $white
+      padding 15px 0
+      display none
+      +portrait()
+        top: 30px;
+      +mobile()
+        position static
+        //display block
+      li
+        margin-right 15px
+        .menu-number-link
+          display inline-block
+          padding-right 0
+          &:after
+            display none
+
+
+.menu-lang
+  padding 12px 0
+  +tablet()
+    padding 7px 0
+  +portrait()
+    justify-content center
+  +mobile()
+    flex-direction row
+    justify-content center
+  li
+    margin-right 4px
+    padding-right 6px
+    margin-left 0
+    position relative
+    a
+      letter-spacing: 2.4px;
+      &:hover
+        &:before
+          display none
+    .active
+      font-weight 700
+      color $black
+    &:after
+        pseudo(block, absolute)
+        width 1px
+        height 13px
+        background $black
+        top 3px
+        right 2px
+        transform rotate(20deg)
+        +mobile()
+          height: 26px;
+    &:last-child
+      padding-right 0
+      &:after
+        display none
+
+
+/* BURGER ICON */
+
+.nav-icon
+  width 30px
+  height 22px
+  position relative
+  margin 14px 0
+  cursor pointer
+  transitions()
+  transform rotate(0deg)
+  float right
+  +mobile()
+    margin 6px 0
+  span
+    display block
+    position absolute
+    height 3px
+    width 100%
+    background $black
+    border-radius 2px
+    opacity 1
+    left 0
+    transform rotate(0deg)
+    transitions()
+    &:nth-child(1)
+      top 0px
+    &:nth-child(2), &:nth-child(3)
+      top 9px
+    &:nth-child(4)
+      top 18px
+
+.nav-icon.open
+  span
+    &:nth-child(1)
+      top 18px
+      width 0%
+      left 50%
+    &:nth-child(2)
+      transform rotate(45deg)
+    &:nth-child(3)
+      transform rotate(-45deg)
+    &:nth-child(4)
+      top 18px
+      width 0%
+      left 50%
+
+@import "../libs/rew-downnav/downnav.styl"
+//@import "../libs/rew-sidenav/sidenav.styl"

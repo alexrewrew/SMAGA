@@ -1,0 +1,38 @@
+.modal
+  text-align center
+  padding 70px 0
+  .button
+    margin 0 auto
+  &-image-container
+    padding 60px 0
+    p
+      font-size 1.25em
+      font-weight 700
+      span
+        font-weight 300
+        display block
+        font-size 16px
+        line-height: 1.62;
+
+.modaal-container
+  +tablet()
+    max-width 960px
+  +portrait()
+    max-width 720px
+  +mobile()
+    padding-right 15px
+    padding-left 15px
+
+.modaal-content-container
+  padding 0
+
+.modaal-close:focus:before, .modaal-close:focus:after, .modaal-close:hover:before, .modaal-close:hover:after {
+  background: $yellow;
+}
+
+
+.modaal-inner-wrapper
+  +mobile()
+    padding-left 0
+    padding-right 0
+

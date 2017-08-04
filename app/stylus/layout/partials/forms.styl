@@ -1,0 +1,72 @@
+@import '../../utilities/vars'
+@import '../../utilities/mixins'
+
+/* FORMS */
+form {}
+
+/* INPUTS */
+input
+  border: solid 3px $gray-text3
+  transitions()
+  line-height: 1.5;
+  padding 14px 32px 16px
+  max-width 360px
+  margin-bottom 30px
+  font-weight 300
+  +placeholder()
+    color $gray-text3
+  &:focus
+    outline none
+    border-color $yellow
+
+input.error
+  border-color red
+
+textarea
+  resize none
+  border: solid 3px $gray-text3
+  transitions()
+  line-height: 1.5;
+  padding 14px 32px 16px
+  width 100%
+  margin-bottom 30px
+  font-weight 300
+  min-height 184px
+  +placeholder()
+    color $gray-text3
+  &:focus
+    outline none
+    border-color $yellow
+
+textarea.error
+  border-color red
+
+
+.questions
+  display flex
+  justify-content space-between
+  flex-wrap wrap
+  padding: 16px 0 0;
+  +mobile()
+    padding-bottom 16px
+  input
+    flex 1 1 48%
+    max-width 48%
+    +mobile()
+      flex 1 1 100%
+      max-width 100%
+  .button
+    margin 0 auto
+    max-width 361px;
+    font-weight 600
+
+.order
+  display flex
+  justify-content space-between
+  flex-wrap wrap
+  input, .select-container
+    flex 1 1 48%
+    max-width 48%
+    +mobile()
+      flex 1 1 100%
+      max-width 100%

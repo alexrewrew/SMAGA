@@ -1,0 +1,55 @@
+@import '../../utilities/vars'
+@import '../../utilities/mixins'
+
+/* IMAGES */
+img {}
+
+.img-title
+  position relative
+  z-index 2
+  margin-top 13px
+  right: 28px;
+  +portrait()
+    width 150%
+    right auto
+    left -130px
+  +mobile()
+    width auto
+    margin 13px auto 36px
+    display block
+    right 0
+    max-height 219px
+
+.img-about
+  position absolute
+  right 0
+  top 0
+  +portrait()
+    right: -50%;
+  +mobile()
+    position static
+    width 100%
+
+
+.img-responsive
+  width 100%
+
+.img-doctor
+  margin-bottom 36px
+
+.img-person
+  margin-bottom 36px
+  width 100%
+
+.img-gallery
+  display flex
+  justify-content space-between
+  flex-wrap wrap
+  padding 32px 0 26px
+  img
+    flex 1 1 48%
+    max-width: 48%
+    margin-bottom 30px
+    +mobile()
+      flex 1 1 100%
+      max-width 100%

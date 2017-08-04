@@ -1,0 +1,50 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | Smaga Dental Clinic - Контакти
+
+block content
+
+    header.margin-bottom-0
+        .container
+            .row
+                .col-lg-3.display-flex.align-items-center
+                    .header-title
+                        h1 Контакти
+                .col-md-4.col-lg-3
+                    p ул. Воскресенская 12-а,
+                        br
+                        | Київ, Україна
+                    a(href='' title='').link-next.link-map Показати на карті
+                .col-md-4.col-lg-3
+                    p.footer-contacts
+                        | Тел: ‎
+                        a(href='tel:' title='') +38 (044) 337-75-79
+                        br
+                        | Тел:
+                        a(href='tel:' title='') ‎ +38 ‎(050) 223-03-11
+                        br
+                        | E-mail:
+                        a(href='mail:' title='').email  smagadental@gmail.com
+                    ul.social-links-2
+                        li
+                            a(href='' title='')
+                                +fb-sq
+                                | facebook
+                        li
+                            a(href='' title='')
+                                +instagram
+                                | instagram
+                .col-md-4.col-lg-3
+                    a(href='' title='').button Записатись
+
+
+
+    section
+        .container
+            .row
+                .col-12
+                    #map
+
+    include partials/_questions

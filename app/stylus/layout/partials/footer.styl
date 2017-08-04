@@ -1,0 +1,144 @@
+@import "../../utilities/vars"
+@import "../../utilities/mixins"
+
+/* FOOTER */
+footer
+  background $black-back
+  margin-top 100px
+  padding-top 63px
+  h3
+    margin-bottom 40px
+    color: $white
+  p
+    color: $white
+    line-height: 1.43;
+    font-size .875em
+    font-weight 300
+    +mobile()
+      margin-bottom 50px
+  .footer-menu
+    +mobile()
+      margin-bottom 50px
+    li
+      a
+        color $white
+        line-height: 1.43;
+        font-size .875em
+        font-weight 300
+        display block
+        position relative
+        padding-left 15px
+        &:after
+          pseudo(block, absolute)
+          left 0
+          top 9px
+          background $yellow
+          width: 7px;
+          height: 1px
+          transitions()
+        &:hover
+          color $yellow
+          padding-left 25px
+          &:after
+            width 17px
+  .button
+    max-width: 228px;
+    +mobile()
+      max-width 100%
+
+.footer-yellow-block
+  background $yellow
+  padding-left 28px
+  padding-right 28px
+  padding-top 80px
+  position absolute
+  bottom 0
+  top -79px
+  right 15px
+  left 15px
+  +portrait()
+    position static
+    padding-top 40px
+    padding-bottom 40px
+    margin-top 20px
+  +mobile()
+    position relative
+    left 0
+    right 0
+    top -120px
+    padding-bottom 60px
+
+  h3
+    color $black
+  p
+    color $black
+    margin-bottom 20px
+  .time
+    line-height: 1.2;
+    font-size 1.25em
+    letter-spacing: -1.2px;
+    font-weight 700
+    font-size 1.500em
+    margin-bottom 36px
+    +tablet()
+      font-size 1.25em
+  a
+    line-height: 1.25;
+    font-weight 700
+    color $black
+    margin-bottom 20px
+    &:hover
+      color $white
+
+.footer-contacts
+  margin-bottom 15px
+  a
+    color: $white
+    line-height: 1.43
+    font-weight 300
+    &:hover
+      color $yellow
+  .email
+    color $yellow
+    text-decoration underline
+    &:hover
+      text-decoration none
+
+.social-links
+  display flex
+  flex-direction row
+  flex-wrap nowrap
+  margin-bottom 23px
+  li
+    margin-right 30px
+    a
+      color $yellow
+      font-size 22px
+
+.footer-border-bottom
+  padding-bottom 50px
+  border-bottom 1px solid $white
+  position relative
+  &:after
+    pseudo(block, absolute)
+    width 15px
+    height 1px
+    bottom -1px
+    right 0
+    background $black-back
+  &:before
+    pseudo(block, absolute)
+    width 15px
+    height 1px
+    bottom -1px
+    left 0
+    background $black-back
+
+.footer-copyright
+  padding 16px 0 19px
+  p
+    margin-bottom 0
+
+.footer-bird
+  position absolute
+  top -245px

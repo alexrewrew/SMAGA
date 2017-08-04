@@ -1,0 +1,79 @@
+@import "../../utilities/vars"
+@import "../../utilities/mixins"
+
+/* LINKS */
+a
+  text-decoration none
+  transitions()
+  &:hover
+    text-decoration none
+  &:focus
+    text-decoration none
+
+.link-up
+  position fixed
+  right 15px
+  bottom 15px
+  width 30px
+  height 30px
+  display flex
+  justify-content center
+  align-items center
+  opacity 0
+
+.link-up.visible
+  opacity 1
+
+.link-next
+  position relative
+  display block
+  max-width 263px
+  width 100%
+  text-align center
+  z-index 3
+  line-height: 1.15;
+  letter-spacing: 1px;
+  font-weight 700
+  font-size 1.25em
+  color $black
+  +mobile()
+    max-width 100%
+  &:hover
+    color $black
+    .fa
+      transform translateX(10px)
+    &:before
+      transform translateY(20px)
+  .fa
+    font-size 30px
+    position relative
+    bottom -4px
+    margin-left 18px
+    transitions()
+  &:before
+    pseudo(block, absolute)
+    width 100%
+    height 20px
+    background $yellow
+    bottom -10px
+    right 0
+    left 0
+    z-index -1
+    transitions()
+
+.social-links-2
+  +mobile()
+    margin-bottom 40px
+  li
+    a
+      color $black
+      line-height: 1.88;
+      &:hover
+        color $yellow
+    .fa
+      color $yellow
+      font-size 20px
+      margin-right 14px
+
+.link-map
+  max-width 213px

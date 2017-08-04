@@ -1,0 +1,49 @@
+@import "../../utilities/vars"
+@import "../../utilities/mixins"
+
+/* BUTTON */
+button {}
+
+.button
+  display block
+  color $black
+  width 100%
+  max-width 263px
+  background $yellow
+  text-align center
+  line-height: 1.05;
+  letter-spacing: 1.1px;
+  font-size 1.375em
+  padding 16px 0 19px
+  border none
+  cursor pointer
+  transitions()
+  &:hover
+    color $yellow3
+    background $yellow2
+  &:focus
+    outline none
+    color $black
+  +mobile()
+    max-width 100%
+    margin-bottom 36px
+
+.button-with-arrow
+  padding-top 7px
+  &:hover
+    color $black
+    .fa
+      transform translateX(10px)
+  .fa
+    font-size 30px
+    position relative
+    bottom -4px
+    margin-left 20px
+    transitions()
+
+.button-small
+  font-weight 600
+  max-width: 228px;
+  font-size 1.25em
+  line-height: 1.2;
+  padding 9px 0 12px

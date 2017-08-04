@@ -1,0 +1,61 @@
+.services-list
+  padding 11px 0 59px
+  li
+    a
+      color $black
+      position relative
+      font-size 1.125em
+      line-height: 1.89;
+      font-weight 300
+      &:before
+        pseudo(block, absolute)
+        left -10px
+        top 8px
+        background $yellow
+        width 2px
+        height 8px
+        transform rotate(45deg)
+        opacity 0
+        transitions()
+      &:after
+        pseudo(block, absolute)
+        left -10px
+        top 3px
+        background $yellow
+        width 2px
+        height 8px
+        transform rotate(-45deg)
+        opacity 0
+        transitions()
+      &:hover
+        padding-left 25px
+        font-weight 700
+        &:before, &:after
+          opacity 1
+          left 5px
+
+.services-price
+  line-height: 1.9;
+  text-align: center;
+  font-size 1.25em
+  border-bottom 3px solid $yellow
+  margin 20px 0
+  padding-bottom 6px
+  +mobile()
+    margin-bottom 75px
+
+.services-step
+  position relative
+  padding-top 95px
+  margin-bottom 45px
+  &:before
+    pseudo(block,absolute)
+    counter-increment: steps;
+    content: counter(steps)
+    top 0
+    left 0
+    font-size 5.625em
+    line-height 1
+    letter-spacing: 2.2px;
+    font-weight 700
+    color $lightgreen

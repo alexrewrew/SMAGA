@@ -1,0 +1,35 @@
+@import '../../utilities/vars'
+@import '../../utilities/mixins'
+
+.back-green
+  background #F7F7F7
+  position absolute
+  top 0
+  left 24%
+  right 0
+  bottom 0
+  z-index 1
+  +mobile()
+    left 4%
+    bottom auto
+    height 232px
+
+.block-title
+  p
+    margin-bottom 28px
+
+.back-image-1
+  background url('../img/illus/img1-3.png') center center no-repeat
+  background-size cover
+  min-height 500px
+  .display-flex
+    min-height 500px
+
+#map
+  background $yellow
+  width: 100%
+  height: 400px;
+
+.pattern
+  position absolute
+  top: -116px;

@@ -1,0 +1,23 @@
+section
+    .container
+        img(src='img/kids/pattern2g.svg' title='' alt='' onerror='this.src="img/kids/pattern2g.png"').pattern
+        .row.justify-content-center
+            .col-md-10.col-lg-8
+                h2.question-title Залишились запитання?
+                p.text-center Напишіть нам повідомлення, та ми із радістю відповімо вам
+                form.questions
+                    input(type='text' placeholder="Ваше ім'я").error
+                    input(type='email' placeholder='E-mail')
+                    textarea(placeholder='Текст повідомлення')
+                    button(type='submit' href='#modal-confirm').inline.button Надіслати
+
+#modal-confirm(style='display:none')
+    .container.modal
+        .row.justify-content-center
+            .col-md-8.col-lg-6
+                h2.question-title Залишились запитання?
+                p Напишіть нам повідомлення, та ми із радістю відповімо вам
+                .modal-image-container
+                    img(src='img/icons/message.svg' title='' alt='' onerror="src='img/icons/message.png'")
+                    p Повідомлення відправлено
+                a(href='' title='').button Добре

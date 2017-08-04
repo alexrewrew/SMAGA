@@ -1,0 +1,42 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | Smaga Dental Clinic - Катерина Олексіївна Смага
+
+block content
+
+    section.padding-top-0
+        .container
+            .row
+                .col-md-4
+                    img(src='img/illus/img2-1.png' title='' alt='').img-person
+                .col-md-8.offset-lg-1.col-lg-7
+                    .row.justify-content-between
+                        .col-md-7.col-lg-6
+                            h1.person-title Катерина Олексіївна Смага
+                        .col-md-5
+                            a(href='' title='').button Записатись
+                    .row
+                        .col-12
+                            p Головний лікар, Лікар другої категорії
+                            .person-jobs
+                                h6 Напрямки діяльності
+                                ul.person-jobs--list
+                                    li Терапевтична стоматологія
+                                    li Ортопедична стоматологія
+                            h6 Основна інформація
+                            p участник ITI-клуба (международного клубаимплантологов), с 2015 года совершенствует свои навыки в UrbanRegenerationInstitute (Budapest).
+                            h6 Освіта
+                            p Українська медична стоматологічна академія (Полтава), 2007
+                            h6 Досвід роботи
+                            p З 2009 року
+                            h6 Захоплення
+                            p горные лыжи, яхтинг, фитнес, путешествия, литература.
+                            h6 Особливості роботи
+                            p малоинвазивные и эстетически ориентированные методики в хирургии и имплантологии, методика направленной костной регенерации (GBR).
+                            .spacer-30
+                            a(href='' title='').link-next Усі лікарі
+                                i.fa.fa-angle-right
+
+    include partials/_questions

@@ -1,0 +1,37 @@
+@import '../../utilities/vars'
+@import '../../utilities/mixins'
+
+/* HEADER */
+header
+  position relative
+  margin-bottom 100px
+  +mobile()
+    margin-bottom 50px
+  .header-title
+    position relative
+    z-index 10
+    p
+      margin-bottom 68px
+      +mobile()
+        margin-bottom 47px
+  h2.margin-bottom-0
+    +mobile()
+      margin-bottom 20px
+
+  .header-jumbotron
+    background $gray-back
+    padding 34px 97px 38px
+    +mobile()
+      padding 34px 30px 38px
+    p
+      margin-bottom 0
+
+  .footer-contacts
+    +mobile()
+      margin-top 40px
+    a
+      color $black
+
+.header-about
+  .row
+    min-height 440px

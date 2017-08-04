@@ -1,0 +1,147 @@
+.slider
+  .arrow
+    display block
+    background $yellow
+    max-width 62px
+    width 100%
+    text-align center
+    position absolute
+    right -31px
+    z-index 10
+    box-shadow: 0px 7px 23px 0px rgba(255,187,0,1);
+    padding 7px 0
+    cursor pointer
+    transitions()
+
+    &:hover
+      transform translateY(5px)
+      box-shadow: 0px 2px 23px 0px rgba(255,187,0,1);
+    .fa
+      font-size 30px
+  .arrow-right
+    top 37%
+
+  .arrow-left
+    top 51%
+
+
+.service-slider
+  display block
+  background $gray-back
+  padding 33px 35px 30px 38px
+  max-width 263px
+  +mobile()
+    max-width unset
+    background $lightgreen
+  p
+    margin-bottom 9px
+    font-size .875em
+    font-weight: 300
+    line-height: 1.75
+  span
+    color $trans
+    font-size .875em
+    font-weight 700
+    float right
+    transitions()
+    .fa
+      font-size 28px
+      position relative
+      top 5px
+      margin-left 13px
+  svg
+    margin-bottom 23px
+    g
+      fill $gray-text3
+      transitions()
+      +mobile()
+        fill $white
+  &:focus
+    outline none
+  &:hover
+    background $gray-text3
+    span
+      color $white
+    svg
+      g
+        fill $white
+
+.slider-one
+  +mobile()
+    margin-bottom 60px
+  .arrow-right
+    +portrait()
+      bottom -35px
+      top auto
+      right 0
+    +mobile()
+      bottom -20px
+      top auto
+      right 0
+  .arrow-left
+    +portrait()
+      bottom -35px
+      top auto
+      right 80px
+    +mobile()
+      bottom -20px
+      top auto
+      right 75px
+
+.slider-three
+  +mobile()
+    margin-bottom 50px
+  .arrow
+    top 31%
+    +mobile()
+      top auto
+      bottom -20px
+  .arrow-right
+    right -164px
+    +mobile()
+      right 0
+  .arrow-left
+    right -91px
+    +mobile()
+      right 75px
+  .slick-slide
+    margin-right 30px
+    +portrait()
+      margin-right: 15px;
+    +mobile()
+      margin-right: 0;
+
+.slider-head
+  margin-bottom 54px
+  +mobile()
+    margin-top 50px
+  .arrow
+    bottom -26px
+    top auto
+    right -1px
+  .arrow-left
+    right 75px
+
+.slider-title
+  position relative
+  height 100%
+  +mobile()
+    p
+      margin-bottom 47px
+  .button
+    position absolute
+    bottom 0
+    left 0
+    +mobile()
+      position static
+  .slider-counter
+    letter-spacing: 2.2px;
+    color $lightgreen
+    font-size 5.625em
+    font-weight 700
+    line-height 1
+    margin-bottom 95px
+    +portrait()
+      margin-bottom 110px
+    +mobile()
+      display none
