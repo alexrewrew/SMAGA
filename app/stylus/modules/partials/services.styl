@@ -59,3 +59,22 @@
     letter-spacing: 2.2px;
     font-weight 700
     color $lightgreen
+
+.service-row
+  display flex
+  flex-direction row
+  flex-wrap nowrap
+  &--header
+    .column
+      line-height: 1.0;
+      letter-spacing: 1.2px;
+      &:first-child
+        background $gray-back
+      &:last-child
+        background $yellow
+  &--regular
+    border-bottom 2px solid $black
+    .column
+      background $trans
+      font-weight: 300;
+      line-height: 2.38;

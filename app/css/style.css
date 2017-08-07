@@ -8619,6 +8619,38 @@ select:focus {
 	font-weight: 700;
 	color: #d0f5e1;
 }
+.service-row {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display:         flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-flex-wrap: nowrap;
+	    -ms-flex-wrap: nowrap;
+	        flex-wrap: nowrap;
+}
+.service-row--header .column {
+	line-height: 1;
+	letter-spacing: 1.2px;
+}
+.service-row--header .column:first-child {
+	background: #f8f8f8;
+}
+.service-row--header .column:last-child {
+	background: #ffe51b;
+}
+.service-row--regular {
+	border-bottom: 2px solid #000;
+}
+.service-row--regular .column {
+	background: transparent;
+	font-weight: 300;
+	line-height: 2.38;
+}
 .blog-list {
 	display: -webkit-box;
 	display: -webkit-flex;

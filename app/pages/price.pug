@@ -1,0 +1,45 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | Smaga Dental Clinic - Послуги
+
+block content
+
+    section.padding-top-0
+        .container
+            .row
+                .col-md-3
+                    h1 Прайс цін
+                    ul.services-list
+                        li
+                            a(href='' title='') Лікування карієсу
+                        li
+                            a(href='' title='') Лікування каналів
+                        li
+                            a(href='' title='') Професійна гігієна
+                        li
+                            a(href='' title='') Протезування
+                        li
+                            a(href='' title='') Парадонтологія
+                        li
+                            a(href='' title='') Дитячий прийом
+                        li
+                            a(href='' title='') Хірургічна стоматологія
+                        li
+                            a(href='' title='') Імплантація
+                        li
+                            a(href='' title='') Ортодонтія
+                    a(href='' title='').button.button-small Прайс цін
+
+                .col-md-9
+                    .service-row
+                        .service-row--header
+                            .column Лікування карієсу
+                            .column Ціна
+                        .service-row--regular
+                            .column Лечение одного временного зуба, которое заканчивается пломбой
+                            .column від 500 до 1200 грн
+
+    include partials/_order
+    include partials/_questions
