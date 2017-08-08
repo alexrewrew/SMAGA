@@ -6681,12 +6681,17 @@ a:focus {
 	line-height: 1.88;
 }
 .social-links-2 li a:hover {
-	color: #ffe51b;
+	color: #a99500;
+}
+.social-links-2 li a:hover .fa {
+	color: #a99500;
 }
 .social-links-2 li .fa {
 	color: #ffe51b;
 	font-size: 20px;
 	margin-right: 14px;
+	-webkit-transition: all .4s ease;
+	        transition: all .4s ease;
 }
 .link-map {
 	max-width: 213px;
@@ -6876,6 +6881,9 @@ header .header-jumbotron p {
 header .footer-contacts a {
 	color: #000;
 }
+header .footer-contacts .email {
+	color: #000;
+}
 .header-about .row {
 	min-height: 440px;
 }
@@ -7050,6 +7058,12 @@ nav.fixed {
 }
 .menu li a:hover:before {
 	background: #ffe51b;
+}
+.menu li .active {
+	color: #000;
+}
+.menu li .active:hover:before {
+	background: transparent;
 }
 .menu .menu-number {
 	position: relative;
@@ -7383,7 +7397,7 @@ footer .button {
 	margin-bottom: 20px;
 }
 .footer-yellow-block a:hover {
-	color: #fff;
+	color: #a99500;
 }
 .footer-contacts {
 	margin-bottom: 15px;
@@ -7394,7 +7408,7 @@ footer .button {
 	font-weight: 300;
 }
 .footer-contacts a:hover {
-	color: #ffe51b;
+	color: #a99500;
 }
 .footer-contacts .email {
 	color: #ffe51b;
@@ -7402,6 +7416,7 @@ footer .button {
 }
 .footer-contacts .email:hover {
 	text-decoration: none;
+	color: #a99500;
 }
 .social-links {
 	display: -webkit-box;
@@ -7424,6 +7439,9 @@ footer .button {
 .social-links li a {
 	color: #ffe51b;
 	font-size: 22px;
+}
+.social-links li a:hover {
+	color: #a99500;
 }
 .footer-border-bottom {
 	padding-bottom: 50px;
@@ -7667,6 +7685,7 @@ select:focus {
 	line-height: 1.05;
 	letter-spacing: 1.1px;
 	font-size: 1.375em;
+	font-weight: 600;
 	padding: 16px 0 19px;
 	border: none;
 	cursor: pointer;
@@ -7833,7 +7852,7 @@ select:focus {
 @media (max-width: 767px) {
 	.service-slider {
 		max-width: unset;
-		background: #d0f5e1;
+		background: #d2d2d2;
 	}
 }
 .service-slider p {
@@ -7994,7 +8013,7 @@ select:focus {
 }
 .slider-title .slider-counter {
 	letter-spacing: 2.2px;
-	color: #d0f5e1;
+	color: #d2d2d2;
 	font-size: 5.625em;
 	font-weight: 700;
 	line-height: 1;
@@ -8617,7 +8636,7 @@ select:focus {
 	line-height: 1;
 	letter-spacing: 2.2px;
 	font-weight: 700;
-	color: #d0f5e1;
+	color: #d2d2d2;
 }
 .service-row {
 	margin-bottom: 52px;
