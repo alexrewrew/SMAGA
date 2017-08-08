@@ -8482,9 +8482,9 @@ select:focus {
 	opacity: 1;
 }
 .team-container:hover .team-container--description-panel {
-	-webkit-transform: translateY(100%);
-	    -ms-transform: translateY(100%);
-	        transform: translateY(100%);
+	-webkit-transform: translateY(-99%);
+	    -ms-transform: translateY(-99%);
+	        transform: translateY(-99%);
 }
 @media (min-width: 768px) and (max-width: 991px) {
 	.team-container:hover .team-container--description-panel {
