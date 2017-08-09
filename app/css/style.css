@@ -7875,19 +7875,6 @@ select:focus {
 	top: 5px;
 	margin-left: 13px;
 }
-.service-slider svg {
-	margin-bottom: 23px;
-}
-.service-slider svg g {
-	fill: #d2d2d2;
-	-webkit-transition: all .4s ease;
-	        transition: all .4s ease;
-}
-@media (max-width: 767px) {
-	.service-slider svg g {
-		fill: #fff;
-	}
-}
 .service-slider:focus {
 	outline: none;
 }
@@ -7897,8 +7884,40 @@ select:focus {
 .service-slider:hover span {
 	color: #fff;
 }
-.service-slider:hover svg g {
-	fill: #fff;
+.service-slider:hover .service--image-container .front {
+	opacity: 0;
+}
+.service-slider:hover .service--image-container .back {
+	opacity: 1;
+}
+.service--image-container {
+	height: 78px;
+	margin-bottom: 23px;
+	position: relative;
+}
+.service--image-container img {
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-transition: all .4s ease;
+	        transition: all .4s ease;
+}
+.service--image-container .front {
+	opacity: 1;
+}
+@media (max-width: 767px) {
+	.service--image-container .front {
+		opacity: 0;
+	}
+}
+.service--image-container .back {
+	opacity: 0;
+}
+@media (max-width: 767px) {
+	.service--image-container .back {
+		opacity: 1;
+	}
 }
 @media (max-width: 767px) {
 	.slider-one {

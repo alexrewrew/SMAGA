@@ -49,22 +49,37 @@
       position relative
       top 5px
       margin-left 13px
-  svg
-    margin-bottom 23px
-    g
-      fill $gray-text3
-      transitions()
-      +mobile()
-        fill $white
   &:focus
     outline none
   &:hover
     background $gray-text3
     span
       color $white
-    svg
-      g
-        fill $white
+    .service--image-container
+      .front
+        opacity 0
+      .back
+        opacity 1
+
+.service--image-container
+  height 78px
+  margin-bottom 23px
+  position relative
+  img
+    height 100%
+    position absolute
+    top 0
+    left 0
+    transitions()
+  .front
+    opacity 1
+    +mobile()
+      opacity 0
+  .back
+    opacity 0
+    +mobile()
+      opacity 1
+
 
 .slider-one
   +mobile()
