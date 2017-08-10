@@ -1,0 +1,20 @@
+//- layouts/layout.pug
+extend layouts/_layout.pug
+
+block title
+    | Smaga Dental Clinic - Головна сторінка
+
+block content
+
+    header
+        .container
+            .row
+                .col-md-5.col-lg-4.display-flex.align-items-center.flex-last.flex-md-first
+                    .header-title.ff
+                        h2 Сторінка не знайдена
+                        p Сторінка, яку ви шукаєте не знайдена, чи більше не існує, перейдіть будь-ласка на головну.
+                        a(href='index.html' title='').link-next На головну
+                            i.fa.fa-angle-right
+                .col-md-7.col-lg-8
+                    h1.fouty-four 404
+        .back-green
